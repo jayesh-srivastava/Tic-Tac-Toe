@@ -11,7 +11,7 @@ I have created a game loop. The game starts with empty cells and ends when someo
 The example below shows how the program should work.
 
 ---------\
-|       |\
+|&nbsp; &nbsp; &nbsp; &nbsp;|\
 |       |\
 |       |\
 ---------\
@@ -34,7 +34,7 @@ Enter the coordinates: 1 3\
 |       |\
 ---------\
 Enter the coordinates: 3 1\
----------\
+---------
 | O     |\
 |   X   |\
 |     X |\

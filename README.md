@@ -5,6 +5,11 @@ First one of you moves as X, and then the other one moves as
 
 I have created a game loop. The game starts with empty cells and ends when someone wins or there is a draw. The final result is shown after the end of the game.
 
+The game is played on the basis of coordinates. The coordinates are as follows-\
+(1, 3) (2, 3) (3, 3)\
+(1, 2) (2, 2) (3, 2)\
+(1, 1) (2, 1) (3, 1)
+
 
 #### Example
 

@@ -10,4 +10,7 @@ I have created a game loop. The game starts with empty cells and ends when someo
 
 The example below shows how the program should work.
 
+![](https://github.com/jayesh-srivastava/Tic-Tac-Toe/blob/master/images/Screenshot%20(429).png)
+![](https://github.com/jayesh-srivastava/Tic-Tac-Toe/blob/master/images/Screenshot%20(430).png)
+
 

@@ -8,11 +8,11 @@ public class Main {
     public static void main(String[] args) {
         char[][] a = {{' ', ' ', ' '}, {' ', ' ', ' '}, {' ', ' ', ' '}};
         Main ob=new Main();
-        ob.printing(a);
-        ob.entering(a);
+        ob.printgrid(a);
+        ob.addingrid(a);
         ob.checkresult(a);
     }
-    public void printing(char[][] a) {
+    public void printgrid(char[][] a) {
         int c = 0;
         System.out.print("---------\n| ");
         for (int i = 0; i < 3; i++) {
@@ -27,7 +27,7 @@ public class Main {
         System.out.print("|\n---------\n");
     }
     int turn=1;
-    public void entering(char[][] a) {
+    public void addingrid(char[][] a) {
             int f = 0;
             while (f == 0) {
                 System.out.print("Enter the coordinates: ");
@@ -45,7 +45,7 @@ public class Main {
                         a[0][0] = symbol;
                         f++;
                         turn++;
-                        printing(a);
+                        printgrid(a);
                     } else {
                         System.out.print("This cell is occupied! Choose another one!\n");
                     }
@@ -54,7 +54,7 @@ public class Main {
                         a[0][1] = symbol;
                         f++;
                         turn++;
-                        printing(a);
+                        printgrid(a);
                     } else {
                         System.out.print("This cell is occupied! Choose another one!\n");
                     }
@@ -63,7 +63,7 @@ public class Main {
                         a[0][2] = symbol;
                         f++;
                         turn++;
-                        printing(a);
+                        printgrid(a);
                     } else {
                         System.out.print("This cell is occupied! Choose another one!\n");
                     }
@@ -72,7 +72,7 @@ public class Main {
                         a[1][0] = symbol;
                         f++;
                         turn++;
-                        printing(a);
+                        printgrid(a);
                     } else {
                         System.out.print("This cell is occupied! Choose another one!\n");
                     }
@@ -81,7 +81,7 @@ public class Main {
                         a[1][1] = symbol;
                         f++;
                         turn++;
-                        printing(a);
+                        printgrid(a);
                     } else {
                         System.out.print("This cell is occupied! Choose another one!\n");
                     }
@@ -90,7 +90,7 @@ public class Main {
                         a[1][2] = symbol;
                         f++;
                         turn++;
-                        printing(a);
+                        printgrid(a);
                     } else {
                         System.out.print("This cell is occupied! Choose another one!\n");
                     }
@@ -99,7 +99,7 @@ public class Main {
                         a[2][0] = symbol;
                         f++;
                         turn++;
-                        printing(a);
+                        printgrid(a);
                     } else {
                         System.out.print("This cell is occupied! Choose another one!\n");
                     }
@@ -108,7 +108,7 @@ public class Main {
                         a[2][1] = symbol;
                         f++;
                         turn++;
-                        printing(a);
+                        printgrid(a);
                     } else {
                         System.out.print("This cell is occupied! Choose another one!\n");
                     }
@@ -117,7 +117,7 @@ public class Main {
                         a[2][2] = symbol;
                         f++;
                         turn++;
-                        printing(a);
+                        printgrid(a);
                     } else {
                         System.out.print("This cell is occupied! Choose another one!\n");
                     }
@@ -128,7 +128,7 @@ public class Main {
                 }
             }
             if(!(this.checkresult(a)))
-                entering(a);
+                addingrid(a);
 
     }
     public boolean checkresult(char[][] a) {
